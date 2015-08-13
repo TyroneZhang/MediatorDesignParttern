@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--SecondViewController-->
+        <scene sceneID="heE-Xp-naT">
+            <objects>
+                <viewController id="QEC-Sy-Wgw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zSR-mF-ZYm"/>
+                        <viewControllerLayoutGuide type="bottom" id="njd-BN-lyY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zvb-lo-gTC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SecondViewController" id="gZw-wS-se0">
+                        <barButtonItem key="leftBarButtonItem" tag="100" title="Dismiss" id="mFI-AK-5Ct">
+                            <connections>
+                                <action selector="requestViewControllerChangeByObject:" destination="8HA-qv-4rh" id="Uex-9d-sFT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7c-tk-Lo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="8HA-qv-4rh" customClass="MediatorController"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FSk-Hg-HLG">
+            <objects>
+                <navigationController storyboardIdentifier="SecondNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="dWK-0p-nqu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KWW-Rs-JRu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QEC-Sy-Wgw" kind="relationship" relationship="rootViewController" id="KpX-iT-W3G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CM9-wB-qrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="424"/>
+        </scene>
+    </scenes>
+</document>
